@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.size{
+    font-size: 40px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.star::before,
+.star::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px; 
+    height: 4px; 
+    background-color: #fff;
+}
+
+.star::before {
+    left: -100px; 
+}
+
+.star::after {
+    right: -100px; 
+}
+
+.star-icon {
+    position: relative;
+    z-index: 1; 
+    padding: 0 10px; 
+}
+
+.starhead::before,
+.starhead::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px; 
+    height: 4px; 
+    background-color: #1F2937; 
+}
+
+.starhead::before {
+    left: -100px; 
+}
+
+.starhead::after {
+    right: -100px; 
+}
+
+.icons{
+    font-size: 60px;
+}
+.layer{
+    position: absolute;
+    top: 350px ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(41, 177, 157,0.8) ;
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.port-img:hover .layer{
+    top: 0;
+}
+
+  
